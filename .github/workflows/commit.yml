@@ -22,7 +22,7 @@ jobs:
         id: scan
         with:
           path: "${{ github.workspace }}"
-          fail-build: false
+          fail-build: true
           severity-cutoff: high
           output-format: sarif
       - name: Upload vulnerability report
